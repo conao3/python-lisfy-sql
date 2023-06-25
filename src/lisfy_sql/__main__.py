@@ -4,7 +4,7 @@ from . import rep
 def main():
     while True:
         try:
-            text = input('lisfy-sql > ')
+            text = input('lisfy-sql> ')
         except EOFError:
             break
 
