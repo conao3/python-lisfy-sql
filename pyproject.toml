@@ -15,7 +15,7 @@ pydantic = "^1.10.9"
 lisfy-sql = "lisfy_sql.__main__:main"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.4.0"
+mypy = "^1.4.1"
 
 [build-system]
 requires = ["poetry-core"]
