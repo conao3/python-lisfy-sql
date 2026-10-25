@@ -23,12 +23,13 @@ reveal_type(res)
 ###
 
 
+T = typing.TypeVar('T', bound=Optional[str])
+
 @typing.overload
 def fn1(text: str, eof_error_p: Literal[True] = True, eof_value: Any = None) -> str: ...
 
-T = typing.TypeVar('T', bound=Optional[str])
 @typing.overload
-def fn1(text: str, eof_error_p: Literal[False] = False, eof_value: T = None) -> str | T: ...
+def fn1(text: str, eof_error_p: Literal[False] = False, eof_value: T | None = None) -> str | T | None: ...
 
 def fn1(text: str, eof_error_p: bool = True, eof_value: Optional[str] = None) -> Optional[str]:
     if text.isspace():
