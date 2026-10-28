@@ -8,14 +8,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-more-itertools = "^9.1.0"
+more-itertools = "^11.2.1"
 pydantic = "^2.14.1"
 
 [tool.poetry.scripts]
 lisfy-sql = "lisfy_sql.__main__:main"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^1.4.1"
+mypy = "^2.4.0"
 
 [build-system]
 requires = ["poetry-core"]
